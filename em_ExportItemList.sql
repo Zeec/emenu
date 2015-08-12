@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[em_ExportItemList] (
+ALTER PROCEDURE em_ExportItemList (
   @nttp_ID          UNIQUEIDENTIFIER,
   @ItemListPath     NVARCHAR(MAX),
   @ModifierListPath NVARCHAR(MAX),
