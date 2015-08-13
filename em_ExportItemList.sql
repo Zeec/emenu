@@ -1,4 +1,9 @@
-ALTER PROCEDURE em_ExportItemList (
+--
+IF OBJECT_ID(N'em_ExportItemList', 'P') IS NOT NULL 
+  DROP PROCEDURE dbo.em_ExportItemList
+GO
+
+ALTER PROCEDURE dbo.em_ExportItemList (
   @nttp_ID          UNIQUEIDENTIFIER,
   @ItemListPath     NVARCHAR(MAX),
   @ModifierListPath NVARCHAR(MAX),
