@@ -5,3 +5,4 @@ set user_name=sa
 set user_password=sasa
 
 sqlcmd -S %server_name% -d %database_name% -U %user_name% -P %user_password% -i em_ExportItemList.sql 
+sqlcmd -S %server_name% -d %database_name% -U %user_name% -P %user_password% -i em_ExportOrders.sql 
